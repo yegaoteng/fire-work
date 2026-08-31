@@ -1,7 +1,7 @@
 package de.fanta.fancyfirework.fireworks;
 
 import de.fanta.fancyfirework.FancyFirework;
-import org.antlr.v4.runtime.misc.NotNull;
+import org.jetbrains.annotations.NotNull;
 import org.bukkit.Keyed;
 import org.bukkit.NamespacedKey;
 import org.bukkit.entity.Entity;

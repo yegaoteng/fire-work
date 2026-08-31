@@ -38,7 +38,7 @@ public class SpookyBomb extends ItemFireWork {
         ItemStack stack = new ItemStack(Material.EGG, 16);
         ItemMeta meta = stack.getItemMeta();
         if (meta != null) {
-            meta.setDisplayName("" + ChatColor.of("#16705A") + ChatColor.BOLD + "Spooky Bomb");
+            meta.setDisplayName("" + ChatColor.of("#16705A") + ChatColor.BOLD + "失明摔炮");
             meta.setLore(FancyFirework.getPlugin().getConfig().getStringList("itemlorebangsnap"));
             meta.setCustomModelData(354461);
             stack.setItemMeta(meta);
@@ -69,7 +69,7 @@ public class SpookyBomb extends ItemFireWork {
                 }
                 if (spookyPlayer.isOnline()) {
                     spookyPlayers.add(spookyPlayer.getUniqueId());
-                    spookyPlayer.addPotionEffect(new PotionEffect(PotionEffectType.DARKNESS, 85, 0, true));
+                    spookyPlayer.addPotionEffect(new PotionEffect(PotionEffectType.DARKNESS, 85, 0, true, true, true));
                     spookyPlayer.playSound(spookyPlayer, Sound.ENTITY_GHAST_HURT, SoundCategory.AMBIENT, 2, 1);
                     AtomicInteger tick = new AtomicInteger();
 
