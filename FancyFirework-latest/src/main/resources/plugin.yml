@@ -1,0 +1,12 @@
+name: FancyFirework
+version: '${project.version}'
+main: de.fanta.fancyfirework.FancyFirework
+api-version: 1.17
+author: ${project.author}
+website: cubeside.de
+softdepend: [Votifier, TreasureChest, PlayerUUIDCache, VanishNoPacket, WorldGuard, SuperVanish, PremiumVanish, ChestShop]
+folia-supported: true
+commands:
+  fancyfirework:
+    aliases: ff
+    description: FancyFireWork Command
